@@ -1,0 +1,59 @@
+[
+  {
+    "root": "baart",
+    "pronunciation": "bʲæɹt",
+    "meaning": "head, голова",
+    "etymology": "Unknown.",
+    "descentants": [
+      "baarti",
+      "baarte",
+      "baartloov",
+      "baartlac"
+    ]
+  },
+  {
+    "root": "yak",
+    "meaning": "apple, яблуко",
+    "pronunciation": "jɑq",
+    "etymology": "Distortion of Ukrainian яблуко.",
+    "descentants": [
+      "yaki",
+      "yake",
+      "yakladi"
+    ]
+  },
+  {
+    "root": "sad",
+    "pronunciation": "sɑd",
+    "meaning": "forest, woods, ліс",
+    "etymology": "Unknown."
+  },
+  {
+    "root": "yans",
+    "pronunciation": "jans",
+    "meaning": "(v) eat, їсти",
+    "etymology": "Unknown.",
+    "descentants": []
+  },
+  {
+    "root": "sim",
+    "pronunciation": "sɪm",
+    "meaning": "drink, imbibe, пити",
+    "etymology": "Proto-Qugek *silm → si(l)m → sim",
+    "descentants": []
+  },
+  {
+    "root": "ax",
+    "pronunciation": "ɑʂ",
+    "meaning": "run, бігти",
+    "etymology": "ar + -x- → a(r)x → ax",
+    "descentants": []
+  },
+  {
+    "root": "ar",
+    "pronunciation": "ɑɹ",
+    "meaning": "go, йти",
+    "etymology": "Proto-Qugek *ař ",
+    "descentants": []
+  }
+]

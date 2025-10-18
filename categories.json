@@ -1,0 +1,12 @@
+[
+	{
+		"id": "food",
+		"name": "Food",
+		"roots": ["yak", "yans"]
+	},
+	{
+		"id": "body",
+		"name": "Body parts",
+		"roots": "baart"
+	}
+]
