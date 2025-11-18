@@ -35,8 +35,8 @@ body {
 }
 .edittext:focus { box-shadow: 0 0 100px #FFFFFF; }
 
-#toggle-btn { min-width: 66px; }
-.bbttnn {
+#toggle-btn, #toggle-hbtn { min-width: 66px; }
+.bbttnn, .hidebtn {
 	height: 50px;
 	min-width: 50px;
 	padding: 15px 0;
@@ -52,10 +52,14 @@ body {
 	cursor: pointer;
 	transition: background-color 0.3s ease, border-top 0.3s;
 }
-.bbttnn:hover {
+.bbttnn:hover, .hidebtn:hover {
 	background-color: #fff;
 	color: #000;
 	border-top: 2px solid #fff;
+}
+
+.hidebtn {
+	width: 100%;
 }
 
 .button-container {
@@ -66,7 +70,7 @@ body {
 	max-width: 700px;
 }
 
-a.tile {
+a.tile, a.abctile {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -82,12 +86,23 @@ a.tile {
 	box-shadow: 0 2px 8px rgba(255,255,255,0.1);
 	text-align: center;
 }
-a.tile:hover {
+
+a.tile:hover, a.abctile:hover {
 	background-color: #FFFFFF;
 	color: #000;
 	box-shadow: 0 0 100px #FFFFFF;
 	border-top: 2px solid #fff;
 }
+
+.abc-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+	margin: 30px auto;
+	max-width: 700px;
+}
+
+
 
 #container {
 	position: relative;

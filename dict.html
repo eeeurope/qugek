@@ -10,8 +10,8 @@
 	<div id="container" class="hide-right">
 		<div id="left-column">
 			<div id="buttonz">
-				<button class="bbttnn" onclick="window.location.href='index.html'">back</button>
 				<button id="toggle-btn" class="bbttnn">show list</button>
+				<button class="bbttnn" onclick="window.location.href='index.html'">back</button>
 			</div>
 			<h2 id="root">Pick a wordroot in the list</h2>
 			<p id="meaning"></p>
@@ -24,6 +24,7 @@
 		</div>
 		
 		<div id="right-column">
+			<button id="toggle-hbtn" class="hidebtn">hide</button>
 			<input type="text" id="search" class="edittext" placeholder="Search for a wordroot...">
 			<label style="font-size: 15px; border-bottom: 1px solid #222;">
 				<input type="checkbox" id="ahcb" checked> Auto-hide
@@ -35,13 +36,19 @@
 
 	<script>
 		let rootsData = [];
-		const btn = document.getElementById('toggle-btn');
+		const tbtn = document.getElementById('toggle-btn');
+		const thBtn = document.getElementById('toggle-hbtn');
 		const container = document.getElementById('container');
 		const checkbox = document.getElementById('ahcb');
+		const rightColumn = document.getElementById('right-column');
 
-		btn.addEventListener('click', () => {
-			container.classList.toggle('hide-right');
-			btn.textContent = container.classList.contains('hide-right') ? 'show list' : 'hide list';
+		[tbtn, thBtn].forEach(btn => {
+			btn.addEventListener('click', () => {
+				container.classList.toggle('hide-right');
+				const isHidden = container.classList.contains('hide-right');
+				tbtn.textContent = isHidden ? 'show list' : 'hide list';
+				thBtn.textContent = isHidden ? 'hide' : 'hide';
+			});
 		});
 
 		Promise.all([
@@ -104,7 +111,7 @@
 			
 			const descentantsEl = document.getElementById("descentants");
 			if(item.descentants && item.descentants.length > 0) {
-				descentantsEl.innerHTML = "<strong>Descendants:</strong><br>";
+				descentantsEl.innerHTML = "<strong>Derived words:</strong><br>";
 				item.descentants.forEach((desc, index) => {
 					const link = document.createElement("a");
 					link.href = `words.html?word=${desc}`;
