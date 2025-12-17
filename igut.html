@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Культура 1914–1921</title>
+<style>
+  body { font-family: sans-serif; }
+  table { border-collapse: collapse; }
+  th, td {
+    border: 1px solid #444;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+  }
+  th { background: #eee; }
+  td:hover { background: #def; }
+  #content {
+    margin-top: 20px;
+    max-width: 900px;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Галузь \ Рік</th>
+    <th>1914</th><th>1915</th><th>1916</th><th>1917</th>
+    <th>1918</th><th>1919</th><th>1920</th><th>1921</th>
+  </tr>
+
+  <tr>
+    <th>Освіта</th>
+    <td onclick="show('osvita1914')">•</td>
+    <td onclick="show('osvita1915')">•</td>
+    <td onclick="show('osvita1916')">•</td>
+    <td onclick="show('osvita1917')">•</td>
+    <td onclick="show('osvita1918')">•</td>
+    <td onclick="show('osvita1919')">•</td>
+    <td onclick="show('osvita1920')">•</td>
+    <td onclick="show('osvita1921')">•</td>
+  </tr>
+
+  <tr>
+    <th>Театр</th>
+    <td onclick="show('teatr1914')">•</td>
+    <td onclick="show('teatr1915')">•</td>
+    <td onclick="show('teatr1916')">•</td>
+    <td onclick="show('teatr1917')">•</td>
+    <td onclick="show('teatr1918')">•</td>
+    <td onclick="show('teatr1919')">•</td>
+    <td onclick="show('teatr1920')">•</td>
+    <td onclick="show('teatr1921')">•</td>
+  </tr>
+
+  <tr>
+    <th>Музика</th>
+    <td onclick="show('music1914')">•</td>
+    <td onclick="show('music1915')">•</td>
+    <td onclick="show('music1916')">•</td>
+    <td onclick="show('music1917')">•</td>
+    <td onclick="show('music1918')">•</td>
+    <td onclick="show('music1919')">•</td>
+    <td onclick="show('music1920')">•</td>
+    <td onclick="show('music1921')">•</td>
+  </tr>
+
+  <tr>
+    <th>Живопис</th>
+    <td onclick="show('paint1914')">•</td>
+    <td onclick="show('paint1915')">•</td>
+    <td onclick="show('paint1916')">•</td>
+    <td onclick="show('paint1917')">•</td>
+    <td onclick="show('paint1918')">•</td>
+    <td onclick="show('paint1919')">•</td>
+    <td onclick="show('paint1920')">•</td>
+    <td onclick="show('paint1921')">•</td>
+  </tr>
+
+  <tr>
+    <th>Література</th>
+    <td onclick="show('lit1914')">•</td>
+    <td onclick="show('lit1915')">•</td>
+    <td onclick="show('lit1916')">•</td>
+    <td onclick="show('lit1917')">•</td>
+    <td onclick="show('lit1918')">•</td>
+    <td onclick="show('lit1919')">•</td>
+    <td onclick="show('lit1920')">•</td>
+    <td onclick="show('lit1921')">•</td>
+  </tr>
+</table>
+
+<div id="content"></div>
+
+<script>
+const data = {
+  osvita1914: "1914: Через початок Першої світової війни та 100-річчям від дня народження Т. Шевченка царський уряд посилює русифікацію...",
+  osvita1915: "1915: На окупованих росією землях Галичини закриваються українські школи...",
+  osvita1916: "1916: Криза шкіл через війну...",
+  osvita1917: "1917: Відбуваються I та II Всеукраїнські педагогічні з'їзди...",
+  osvita1918: "1918: Розквіт — за Гетьманату Скоропадського засновано УАН...",
+  osvita1919: "1919: Хаос — Директорія намагається зберегти національну школу...",
+  osvita1920: "1920: Остаточна встанова радянської системи освіти...",
+  osvita1921: "1921: Створено Головне управління професійної освіти...",
+
+  teatr1914: "1914: Театр Миколи Садовського в Києві продовжує роботу...",
+  teatr1915: "1915: Лесь Курбас працює в театрі «Тернопільські театральні вечори»...",
+  teatr1916: "1916: Курбас переїздить до Києва...",
+  teatr1917: "1917: Засновано «Молодий театр»...",
+  teatr1918: "1918: Засновано Державний драматичний та Державний народний театри...",
+  teatr1919: "1919: Гнат Юра засновує Новий драматичний театр...",
+  teatr1920: "1920: Театр ім. І. Франка гастролює Україною...",
+  teatr1921: "1921: Засновано Театр імені Тараса Шевченка в Харкові...",
+
+  music1914: "1914: Забороняють концерти пам'яті Т. Шевченка...",
+  music1915: "1915: Створення стрілецьких пісень...",
+  music1916: "1916: Перше виконання «Щедрика» Леонтовича...",
+  music1917: "1917: Створення Української республіканської капели...",
+  music1918: "1918: Засновано державний симфонічний оркестр...",
+  music1919: "1919: Світове турне Української республіканської капели...",
+  music1920: "1920: Створення капели «Думка»...",
+  music1921: "1921: Вбивство Миколи Леонтовича...",
+
+  paint1914: "1914: Богомазов пише «Живопис та Елементи»...",
+  paint1915: "1915: Виставка українського народного мистецтва у Відні...",
+  paint1916: "1916: Богомазов створює «Спогади про Кавказ»...",
+  paint1917: "1917: Заснування Української державної академії мистецтв...",
+  paint1918: "1918: Нарбут створює дизайн гривень...",
+  paint1919: "1919: Агітаційне мистецтво, вбивство Мурашка...",
+  paint1920: "1920: Смерть Георгія Нарбута...",
+  paint1921: "1921: Посилення конструктивізму...",
+
+  lit1914: "1914: Вихід драми Винниченка...",
+  lit1915: "1915: Ранні вірші Максима Рильського...",
+  lit1916: "1916: Смерть Івана Франка...",
+  lit1917: "1917: Літературний бум...",
+  lit1918: "1918: «Сонячні кларнети» Павла Тичини...",
+  lit1919: "1919: Угруповання «Музагет»...",
+  lit1920: "1920: Вихід альманаху «Гроно»...",
+  lit1921: "1921: Початок творчого шляху Хвильового..."
+};
+
+function show(key) {
+  document.getElementById("content").textContent = data[key];
+}
+</script>
+
+</body>
+</html>
