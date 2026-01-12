@@ -1,0 +1,142 @@
+:root {
+    --bg-color: #0f100a;
+    --accent-swamp: #2f3818;
+    --accent-blood: #3a0b0b;
+    --text-main: #dcdcdc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    /* Сложный грязный градиент на фоне */
+    background-image: 
+        radial-gradient(circle at 20% 30%, var(--accent-swamp), transparent 60%),
+        radial-gradient(circle at 80% 80%, var(--accent-blood), transparent 50%);
+    color: var(--text-main);
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Чтобы не скроллилось, всё в слайдере */
+}
+
+/* Эффект шума (зерна) */
+.background-noise {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.08;
+    background: url('https://grainy-gradients.vercel.app/noise.svg');
+}
+
+header {
+    text-align: center;
+    padding-top: 2rem;
+    z-index: 10;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: -2px;
+    color: #b8b8b8;
+}
+
+.highlight {
+    color: #6e7a4a; /* Грязный оливковый */
+    text-shadow: 0 0 15px rgba(110, 122, 74, 0.4);
+}
+
+.subtitle {
+    opacity: 0.6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px; /* Важно для 3D */
+}
+
+/* Настройки слайдера */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Плавность перехода */
+    transition: filter 0.3s ease; 
+}
+
+/* Сама картинка */
+.photo-card {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Делаем неактивные фото более мрачными и серыми */
+    filter: sepia(50%) grayscale(40%) contrast(1.2); 
+    transition: 0.5s;
+}
+
+/* Описание под фото */
+.info {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0; /* Скрыто по умолчанию */
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    width: 300px; /* Чтобы текст не разъезжался */
+}
+
+.info h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    color: #d13d3d; /* Цвет сырого мяса для заголовков */
+}
+
+/* МАГИЯ: Показываем текст и меняем стиль только для АКТИВНОГО слайда */
+.swiper-slide-active .photo-card img {
+    filter: none; /* Возвращаем нормальный цвет */
+}
+
+.swiper-slide-active .photo-card {
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.swiper-slide-active .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Затемняем неактивные слайды сильнее (доп стиль Swiper) */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0)) !important;
+}
