@@ -89,7 +89,7 @@ main {
 
 /* Сама картинка */
 .photo-card-container {
-    width: 280px;
+    width: 350px;
     height: 350px; /* Фіксована висота для фото */
     position: relative;
     margin-bottom: 20px;
