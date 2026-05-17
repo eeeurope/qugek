@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Сектори економіки Ізраїлю та Японії</title>
+<style>
+  body { font-family: sans-serif; margin: 20px; }
+  table { border-collapse: collapse; margin-bottom: 30px; width: 100%; }
+  th, td {
+    border: 1px solid #444;
+    padding: 6px 10px;
+    text-align: center;
+  }
+  th { background: #eee; }
+  td { cursor: pointer; }
+  td:hover { background: #def; }
+  .subtitle { text-align: left; font-weight: bold; margin-top: 20px; }
+  #content { margin-top: 20px; white-space: pre-wrap; max-width: 900px; }
+  .small-table { width: 100%; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div class="subtitle">I. Первинний сектор (Сільське господарство, рибальство)</div>
+<table class="small-table">
+  <tr>
+    <th>Показник</th>
+    <th>Ізраїль 🇮🇱</th>
+    <th>Японія 🇯🇵</th>
+  </tr>
+  <tr>
+    <td onclick="show('primGDP')">Частка у ВВП</td>
+    <td>~1.3% – 2.4%</td>
+    <td>~1.0%</td>
+  </tr>
+  <tr>
+    <td onclick="show('primEmployment')">Зайнятість</td>
+    <td>~1.1%</td>
+    <td>~3.0% – 3.4%</td>
+  </tr>
+</table>
+
+<div class="subtitle">II. Вторинний сектор (Промисловість, будівництво)</div>
+<table class="small-table">
+  <tr>
+    <th>Показник</th>
+    <th>Ізраїль 🇮🇱</th>
+    <th>Японія 🇯🇵</th>
+  </tr>
+  <tr>
+    <td onclick="show('secGDP')">Частка у ВВП</td>
+    <td>~15.0% – 26.5%</td>
+    <td>~26.9% – 29.0%</td>
+  </tr>
+  <tr>
+    <td onclick="show('secEmployment')">Зайнятість</td>
+    <td>~17.3%</td>
+    <td>~24.0% – 24.2%</td>
+  </tr>
+</table>
+
+<div class="subtitle">III. Третинний сектор (Послуги)</div>
+<table class="small-table">
+  <tr>
+    <th>Показник</th>
+    <th>Ізраїль 🇮🇱</th>
+    <th>Японія 🇯🇵</th>
+  </tr>
+  <tr>
+    <td onclick="show('terGDP')">Частка у ВВП</td>
+    <td>~52.3% – 69.5%</td>
+    <td>~70.0% – 71.4%</td>
+  </tr>
+  <tr>
+    <td onclick="show('terEmployment')">Зайнятість</td>
+    <td>~81.6%</td>
+    <td>~72.4% – 73.0%</td>
+  </tr>
+</table>
+
+<div id="content"></div>
+
+<script>
+const data = {
+  primGDP: "Ізраїль: Мінімальна частка, але сектор високотехнологічний ĝ крапельне зрошення, пустельне землеробство.\nЯпонія: Низька частка; фокус на рисі (🍚) та рибальстві, підтримується державою",
+  primEmployment: "Ключова відмінність:В обох країнах зайнятість низька. У Японії проблема старіння фермерів; в Ізраїлі — надмірна автоматизація.",
+  
+  secGDP: "Ізраїль: Високотехнологічне виробництво, фармацевтика, оборонна промисловість, обробка алмазів.\nЯпонія: Лідерування в електроніці, машинобудуванні, робототехніці.",
+  secEmployment: "Ключова відмінність: Японія зберігає вищу частку зайнятости в промисловости завдяки масштабному традиційному + високотехнологічному виробництву",
+  
+  terGDP: "Ізраїль: Домінуючий сектор — базується на ІТ, кібербезпеці, фінансах, стартапах.\nЯпонія: Величезний внутрішній ринок послуг, фінанси, роздрібна торгівля.",
+  terEmployment: "Ключова відмінність: В Ізраїлі сфера послуг, особливо високі технології та державний сектор, охоплює переважну більшість робочої сили, порівняно з Японією."
+};
+
+function show(key) {
+  document.getElementById("content").textContent = data[key];
+}
+</script>
+
+</body>
+</html>
