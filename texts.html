@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>text examples</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #text-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                z-index: 1000;
+                overflow-y: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                
+                /* начальное состояние для анимации */
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+            #text-modal.active {
+                opacity: 1;
+                visibility: visible;
+            }
+            .modal-content {
+                max-width: 800px;
+                margin: 70px auto 40px;
+                white-space: pre-wrap;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+            .close-btn {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                z-index: 1001;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="bbttnn" onclick="window.location.href='index.html'">back</button>
+        <h1>text examples</h1>
+        <div class="button-container">
+            <a href="#" class="tile" data-id="text-1">short phrases</a>
+            <a href="#" class="tile" data-id="text-2">the phenomenon of ...</a>
+            <a href="#" class="tile" data-id="text-3">bright starry night</a>
+            <a href="#" class="tile" data-id="text-4">tower of bable</a>
+        </div>
+
+        <div id="text-modal">
+            <button class="bbttnn close-btn" id="close-modal">back</button>
+            <div class="modal-content" id="modal-body"></div>
+        </div>
+
+        <template id="text-1">
+first 30 of https://cofl.github.io/conlang/resources/mirror/conlang-syntax-test-cases.html
+
+du siolus
+du siolung
+du siolut
+du sioluli
+du siolung dif (...)
+du siolung lof
+du sioluli piotev
+du siolus zablo
+zalbe du siolus
+du voovus
+ba iapasi bajuci
+ui iapasi bajuci
+my iapasi bajuci seipi
+tonsle iapa bajuci myf
+hiesyc voolsalut
+hiesyc salut buryptyl
+nie liene hiesyc dylarcias
+pyavung
+fepyavcias
+hiesyc dovung fi pyav
+pyav niofcias
+pyav niofuli pionsto
+tabum d pyav niofuli pionstovy
+biade cgerda siut tyt uif cyt
+au muaut tado
+dylary!
+farymi!
+froux dylarun
+farulim faglovy
+at piaruli pionsto
+        </template>
+
+        <template id="text-2">
+piflaudi ap pistompoi me iapa xyatodus htyrfam mahiomo le vap silie av vamlie. uauu diutlen zundian pistompuuns me hania ubus tiscun t voomiecin syacyl piabiuvel algamial: bopi ap glafys tsyabiecyni a r ap tsyacyni.
+
+The phenomenon of human attractiveness is rarely defined solely by biological or aesthetic factors. Observing the polar manifestations of interpersonal magnetism allows this concept to be divided into two conditional categories: a state of deep deficit and a state of surplus of internal energy.
+        </template>
+
+        <template id="text-3">
+1 paxtan xeun ies
+"zalbe giele zong"
+
+zalbe giele zong, tsoo miecasi, tsoo zolasi
+ioj? stondum, xun macum, ag, lonmacy, cyt bex, cyt?
+nie du, giele zong nion macus, tsoo miecasi nion ziremnusi
+vaht bie spum sooen ycyn cyaun
+ioj? stondum, xun macum, ag, lonmacy, cyt bex, cyt?
+iqum iqum baf, giciam bif
+tsoo miecasi, tsoo zolasi, nien ycyn ziremnusi
+atadym anunin xyaxulimi a remyn giqulimi
+ag, lonmacy! nie du, xun giqun bie spum
+steny leht eier, vaht bi iozum
+cyfyvy xu piaruli, nie du?
+
+спроба писати вірші №1
+"Яскрава зоряна ніч..."
+
+Яскрава зоряна ніч, тисяча дум, тисяча мрій.
+Чуєш? Молю, кличу тебе, гей, одзовись, де ти є, де?
+Сонце моє, зоряна ніч кличе мене і тисяча дум бентежать мене... Бо не можу я стримати серце свое.
+Чуєш? Молю, кличу тебе, гей одзовись де ти є, де? Все шукаю шукаю ніяк не знайду.
+Тисяча мрій, тисяча дум, бентежать серце моє... І стежку із них ми спрядем і спокій знайдем.
+Гей одзовись! Сонце моє, знайти не можу тебе...
+Подай хоч голос, бо не чую...
+Коли ж ти прийдеш, сонце моє?
+        </template>
+
+        <template id="text-4">
+r babilimis bregi, nduu 11:1—9 
+
+ba cihi v ei boci a ei scieop siaut tadyf
+iapa iejyl aruncif r xumerait vavyn giciasi a tat eftyciasi
+meibazdiasi "diegian zefymi a zidolo mudiauymi"
+diegian tsielt tertys a gootyn tsielt gejys znytuci
+piof t bazdiasi "sooial iglyn moocrisec bregic bezymi a sooial nimyn zefymi av meciearulimi bap cihip"
+na r hal calarcias ueul iglyn a bregin daian iapa bezunci
+r hal bazdias "oot cyif bar niomit ein bocin sciesi tyif biei s biefoupe atamym
+calarymi atan biemeipieruuvunul atase bocin zialbonul
+to r hal atan cieoncias tad bapyl cihipyl a ata zufeciasi iglyn bezun
+tyht ty nimiocias vyn r babilimi
+tyt r hal bas cihis bocin zialboncias
+tyd r hal atan bapyl cihipyl cieoncias 
+
+(The Tower of Bable, Genesis 11:1–9)
+        </template>
+
+        <script>
+            const modal = document.getElementById('text-modal');
+            const modalBody = document.getElementById('modal-body');
+            const closeModal = document.getElementById('close-modal');
+            const tiles = document.querySelectorAll('.tile');
+
+            tiles.forEach(tile => {
+                tile.addEventListener('click', e => {
+                    e.preventDefault();
+                    const textId = tile.getAttribute('data-id');
+                    const template = document.getElementById(textId);
+                    if (template) {
+                        modalBody.textContent = template.innerHTML.trim();
+                        modal.classList.add('active');
+                    }
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+        </script>
+    </body>
+</html>

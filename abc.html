@@ -1,47 +1,191 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>qugek leeveci</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<button class="bbttnn" onclick="window.location.href='index.html'">back</button>
-		<div class="abc-container">
-			<a class="abctile">A<p class="monoed">/ɑ/</p></a>
-			<a class="abctile">B<p class="monoed">/b/</p></a>
-			<a class="abctile">C<p class="monoed">/t͡s/</p></a>
-			<a class="abctile">D<p class="monoed">/d̪/</p></a>
-			<a class="abctile">E<p class="monoed">/ɨ͡ɛ/</p></a>
-			<a class="abctile">F<p class="monoed">/f̪/</p></a>
-			<a class="abctile">G<p class="monoed">/ʀ͡ɣ/</p></a>
-			<a class="abctile">H<p class="monoed">/χ/, /x/</p></a>
-			<a class="abctile">I<p class="monoed">/ɪ/, /ə/</p></a>
-			<a class="abctile">J<p class="monoed">/ʐ/</p></a>
-			<a class="abctile">K<p class="monoed">/q/</p></a>
-			<a class="abctile">L<p class="monoed">/ɫ/</p></a>
-			<a class="abctile">M<p class="monoed">/m/</p></a>
-			<a class="abctile">N<p class="monoed">/n/, /ⁿ/</p></a>
-			<a class="abctile">O<p class="monoed">/ɔ/</p></a>
-			<a class="abctile">P<p class="monoed">/p/</p></a>
-			<a class="abctile">Q<p class="monoed">/ʈ͡ʂ/</p></a>
-			<a class="abctile">R<p class="monoed">/ʕ̞͡ɹ/, /r/</p></a>
-			<a class="abctile">S<p class="monoed">/s/</p></a>
-			<a class="abctile">T<p class="monoed">/t̪/</p></a>
-			<a class="abctile">U<p class="monoed">/u/</p></a>
-			<a class="abctile">V<p class="monoed">/v̪/</p></a>
-			<a class="abctile">W<p class="monoed">/w/</p></a>
-			<a class="abctile">X<p class="monoed">/ʂ/</p></a>
-			<a class="abctile">Y<p class="monoed">/j/, /ɯ/</p></a>
-			<a class="abctile">Z<p class="monoed">/z/</p></a>
-			
-		</div>
-		<h1>Nuances</h1>
-		<li>
-			<ul>Y is for the vowel /ɯ/ or /ɨ/ in isolation or in consonant clusters, but as the palatal approximant [j] when adjacent to a vowel.<br><br>
-			kayunsi - <p class="monoed">/qʰɑjũsə/</p><br>
-			byv - <p class="monoed">/bɯv̪/</p>
-			</ul>
-		</li>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>qugek leeveci</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #text-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                z-index: 1000;
+                overflow-y: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+            #text-modal.active {
+                opacity: 1;
+                visibility: visible;
+            }
+            .modal-content {
+                max-width: 600px;
+                margin: 80px auto 40px;
+                text-align: center;
+            }
+            .modal-title {
+                font-family: 'Geist', sans-serif;
+                font-weight: 900;
+                font-size: 80px;
+                margin-bottom: 20px;
+                text-transform: lowercase;
+            }
+            .modal-sound {
+                font-family: 'Noto Sans Mono', serif;
+                font-size: 36px;
+                color: #ddddff;
+                margin-bottom: 20px;
+            }
+            .modal-analogy {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 100;
+                font-size: 18px;
+                color: #aaaaaa;
+                margin-bottom: 30px;
+                line-height: 1.5;
+            }
+            .close-btn {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                z-index: 1001;
+            }
+            
+            .digraphs-section {
+                max-width: 700px;
+                margin: 40px auto 20px;
+                text-align: center;
+            }
+            .digraphs-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="bbttnn" onclick="window.location.href='index.html'">back</button>
+        
+        <div class="abc-container">
+            <a href="#" class="abctile" data-id="let-a">A</a>
+            <a href="#" class="abctile" data-id="let-b">B</a>
+            <a href="#" class="abctile" data-id="let-c">C</a>
+            <a href="#" class="abctile" data-id="let-d">D</a>
+            <a href="#" class="abctile" data-id="let-e">E</a>
+            <a href="#" class="abctile" data-id="let-f">F</a>
+            <a href="#" class="abctile" data-id="let-g">G</a>
+            <a href="#" class="abctile" data-id="let-h">H</a>
+            <a href="#" class="abctile" data-id="let-i">I</a>
+            <a href="#" class="abctile" data-id="let-j">J</a>
+            <a href="#" class="abctile" data-id="let-l">L</a>
+            <a href="#" class="abctile" data-id="let-m">M</a>
+            <a href="#" class="abctile" data-id="let-n">N</a>
+            <a href="#" class="abctile" data-id="let-o">O</a>
+            <a href="#" class="abctile" data-id="let-p">P</a>
+            <a href="#" class="abctile" data-id="let-q">Q</a>
+            <a href="#" class="abctile" data-id="let-r">R</a>
+            <a href="#" class="abctile" data-id="let-s">S</a>
+            <a href="#" class="abctile" data-id="let-t">T</a>
+            <a href="#" class="abctile" data-id="let-u">U</a>
+            <a href="#" class="abctile" data-id="let-v">V</a>
+            <a href="#" class="abctile" data-id="let-w">W</a>
+            <a href="#" class="abctile" data-id="let-x">X</a>
+            <a href="#" class="abctile" data-id="let-y">Y</a>
+            <a href="#" class="abctile" data-id="let-z">Z</a>
+        </div>
+
+        <div class="digraphs-section">
+            <h3 class="digraphs-title">digraphs & combinations</h3>
+            <div class="abc-container" style="margin-top: 10px;">
+                <a href="#" class="abctile" data-id="let-cg">cg</a>
+                <a href="#" class="abctile" data-id="let-ci">ci</a>
+                <a href="#" class="abctile" data-id="let-di">di</a>
+                <a href="#" class="abctile" data-id="let-gi">gi</a>
+                <a href="#" class="abctile" data-id="let-hi">hi</a>
+                <a href="#" class="abctile" data-id="let-ya">ya</a>
+                <a href="#" class="abctile" data-id="let-oo">oo</a>
+                <a href="#" class="abctile" data-id="let-uu">uu</a>
+            </div>
+        </div>
+
+        <div id="text-modal">
+            <button class="bbttnn close-btn" id="close-modal">back</button>
+            <div class="modal-content">
+                <div class="modal-title" id="modal-char"></div>
+                <div class="modal-sound monoed" id="modal-ipa"></div>
+                <div class="modal-analogy" id="modal-analogy"></div>
+            </div>
+        </div>
+
+        <!-- шаблоны звуков для каждой буквы -->
+        <template id="let-a" data-char="A" data-ipa="/ɑ/" data-analogy="like 'a' in father or car"></template>
+        <template id="let-b" data-char="B" data-ipa="/b/" data-analogy="like 'b' in back"></template>
+        <template id="let-c" data-char="C" data-ipa="/k/, /q/" data-analogy="like 'c' in scope, or deeper in the throat"></template>
+        <template id="let-d" data-char="D" data-ipa="/d/, /d̪/, /ð/" data-analogy="like 'd' in dog, or 'th' in this"></template>
+        <template id="let-e" data-char="E" data-ipa="/æ̃/, /æ/" data-analogy="like 'a' in cat (often slightly nasalized)"></template>
+        <template id="let-f" data-char="F" data-ipa="/f/, /f̪/" data-analogy="like 'f' in face"></template>
+        <template id="let-g" data-char="G" data-ipa="/ɣ/, /ɣʷ/" data-analogy="like ukrainian 'г' or spanish 'agua'"></template>
+        <template id="let-h" data-char="H" data-ipa="/x/, /χ/" data-analogy="like scottish 'loch' or german 'Bach'"></template>
+        <template id="let-i" data-char="I" data-ipa="/i/, /ʲ/" data-analogy="like 'ee' in see"></template>
+        <template id="let-j" data-char="J" data-ipa="/ɹ̠/, /ʐ/" data-analogy="like 's' in pleasure or vision"></template>
+        <template id="let-k" data-char="K" data-ipa="/q/" data-analogy="deep back-of-the-throat 'k' (like arabic Qaf)"></template>
+        <template id="let-l" data-char="L" data-ipa="/ɫ/" data-analogy="like 'll' in well (dark l)"></template>
+        <template id="let-m" data-char="M" data-ipa="/m/" data-analogy="like 'm' in moon"></template>
+        <template id="let-n" data-char="N" data-ipa="/n/, /ⁿ/" data-analogy="like 'n' in name"></template>
+        <template id="let-o" data-char="O" data-ipa="/ɒ/, /o/, /ɔ/" data-analogy="like 'o' in hot or thought"></template>
+        <template id="let-p" data-char="P" data-ipa="/p/" data-analogy="like 'p' in pen"></template>
+        <template id="let-q" data-char="Q" data-ipa="/ʈ͡ʂ/" data-analogy="like belarusian 'ч' or english 'ch' in church, but with tongue curled back"></template>
+        <template id="let-r" data-char="R" data-ipa="/ɹ/, /r̪/" data-analogy="like english 'r' in red, or a soft trill"></template>
+        <template id="let-s" data-char="S" data-ipa="/s/" data-analogy="like 's' in sun"></template>
+        <template id="let-t" data-char="T" data-ipa="/t/, /t̪/" data-analogy="like 't' in top"></template>
+        <template id="let-u" data-char="U" data-ipa="/u/" data-analogy="like 'oo' in boot"></template>
+        <template id="let-v" data-char="V" data-ipa="/v/, /v̪/" data-analogy="like 'v' in van"></template>
+        <template id="let-w" data-char="W" data-ipa="/w/" data-analogy="like 'w' in wet"></template>
+        <template id="let-x" data-char="X" data-ipa="/ɹ̠/, /ʂ/" data-analogy="like 'sh' in shoe, but with tongue curled back"></template>
+        <template id="let-y" data-char="Y" data-ipa="/ɯ/, /ʊ/, /ɨ/, /ə/, /∅/" data-analogy="like 'u' in put, 'a' in about, or unrounded 'oo'"></template>
+        <template id="let-z" data-char="Z" data-ipa="/z/" data-analogy="like 'z' in zoo"></template>
+
+        <!-- шаблоны звуков для сочетаний букв -->
+        <template id="let-cg" data-char="cg" data-ipa="/g/, /ɢ/" data-analogy="like 'g' in go"></template>
+        <template id="let-ci" data-char="ci" data-ipa="/c͡ç/, /t͡ʃ/" data-analogy="like 'ch' in cheese"></template>
+        <template id="let-di" data-char="di" data-ipa="/ɟ͡ʝ/, /dʒ/" data-analogy="like 'j' in jump"></template>
+        <template id="let-gi" data-char="gi" data-ipa="/ʝ/, /ʒ/" data-analogy="like 'y' in yes or 's' in vision"></template>
+        <template id="let-hi" data-char="hi" data-ipa="/ç/, /ʃ/" data-analogy="like 'h' in huge or 'sh' in sheep"></template>
+        <template id="let-ya" data-char="ya" data-ipa="/ɨ͡ɛ/" data-analogy="gliding from 'ih' to 'eh'"></template>
+        <template id="let-oo" data-char="oo" data-ipa="/œ͡ɛ/" data-analogy="like french 'eu' or german 'ö'"></template>
+        <template id="let-uu" data-char="uu" data-ipa="/y/" data-analogy="like french 'u' or german 'ü'"></template>
+
+        <script>
+            const modal = document.getElementById('text-modal');
+            const modalChar = document.getElementById('modal-char');
+            const modalIpa = document.getElementById('modal-ipa');
+            const modalAnalogy = document.getElementById('modal-analogy');
+            const closeModal = document.getElementById('close-modal');
+            const tiles = document.querySelectorAll('.abctile');
+
+            tiles.forEach(tile => {
+                tile.addEventListener('click', e => {
+                    e.preventDefault();
+                    const targetId = tile.getAttribute('data-id');
+                    const template = document.getElementById(targetId);
+                    if (template) {
+                        modalChar.textContent = template.getAttribute('data-char');
+                        modalIpa.textContent = template.getAttribute('data-ipa');
+                        modalAnalogy.textContent = template.getAttribute('data-analogy');
+                        modal.classList.add('active');
+                    }
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+        </script>
+    </body>
 </html>

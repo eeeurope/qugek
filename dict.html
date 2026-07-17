@@ -1,133 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wordroots - qugek leeveci</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wordroots - qugek lievest</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div id="container" class="hide-right">
-		<div id="left-column">
-			<div id="buttonz">
-				<button id="toggle-btn" class="bbttnn">show list</button>
-				<button class="bbttnn" onclick="window.location.href='index.html'">back</button>
-			</div>
-			<h2 id="root">Pick a wordroot in the list</h2>
-			<p id="meaning"></p>
-			<img id="image" src="" alt="" style="max-width: 200px;">
-			<p id="pronunciation" class="monoed"></p>
-			<p id="etymology"></p>
-			<div id="categories"></div>
-			<br>
-			<div id="descentants"></div>
-		</div>
-		
-		<div id="right-column">
-			<button id="toggle-hbtn" class="hidebtn">hide</button>
-			<input type="text" id="search" class="edittext" placeholder="Search for a wordroot...">
-			<label style="font-size: 15px; border-bottom: 1px solid #222;">
-				<input type="checkbox" id="ahcb" checked> Auto-hide
-			</label>
-			<ul id="root-list"></ul>
-			<p>This is a test. More entries soon!</p>
-		</div>
-	</div>
+    <div id="container" class="hide-right">
+        <div id="left-column">
+            <div id="buttonz">
+                <button id="toggle-btn" class="bbttnn">show list</button>
+                <button class="bbttnn" onclick="window.location.href='index.html'">back</button>
+            </div>
+            <h2 id="root">pick a wordroot in the list</h2>
+            <p id="meaning"></p>
+            <img id="image" src="" alt="" style="max-width: 200px; display: none;">
+            <p id="pronunciation" class="monoed"></p>
+            <p id="etymology"></p>
+        </div>
+        
+        <div id="right-column">
+            <button id="toggle-hbtn" class="hidebtn">hide</button>
+            <input type="text" id="search" class="edittext" placeholder="search root, meaning...">
+            <label style="font-size: 18px; border-bottom: 1px solid #222; display: inline-flex; align-items: center; gap: 5px; cursor: pointer;">
+                <input type="checkbox" id="ahcb" checked> auto-hide
+            </label>
+            <ul id="root-list"></ul>
+        </div>
+    </div>
 
-	<script>
-		let rootsData = [];
-		const tbtn = document.getElementById('toggle-btn');
-		const thBtn = document.getElementById('toggle-hbtn');
-		const container = document.getElementById('container');
-		const checkbox = document.getElementById('ahcb');
-		const rightColumn = document.getElementById('right-column');
+    <script>
+        let rootsData = [];
 
-		[tbtn, thBtn].forEach(btn => {
-			btn.addEventListener('click', () => {
-				container.classList.toggle('hide-right');
-				const isHidden = container.classList.contains('hide-right');
-				tbtn.textContent = isHidden ? 'show list' : 'hide list';
-				thBtn.textContent = isHidden ? 'hide' : 'hide';
-			});
-		});
+        const tbtn = document.getElementById('toggle-btn');
+        const thBtn = document.getElementById('toggle-hbtn');
+        const container = document.getElementById('container');
+        const checkbox = document.getElementById('ahcb');
+        const searchInput = document.getElementById('search');
+        const list = document.getElementById("root-list");
 
-		Promise.all([
-			fetch("roots.json").then(res => res.json()),
-			fetch("categories.json").then(res => res.json())
-		]).then(([roots, categories]) => {
-			rootsData = roots.sort((a, b) => a.root.localeCompare(b.root));
-			categoriesData = categories;
-			renderRootList(rootsData);
+        function toggleSidebar(forceState) {
+            const isHidden = typeof forceState === 'boolean' 
+                ? container.classList.toggle('hide-right', forceState)
+                : container.classList.toggle('hide-right');
+            
+            tbtn.textContent = isHidden ? 'show list' : 'hide list';
+        }
 
-			const urlParams = new URLSearchParams(window.location.search);
-			const rootParam = urlParams.get("root");
-			if(rootParam) showRootDetails(rootParam);
-		});
+        [tbtn, thBtn].forEach(btn => btn.addEventListener('click', () => toggleSidebar()));
 
-		function renderRootList(data) {
-			const list = document.getElementById("root-list");
-			list.innerHTML = "";
-			data.forEach(item => {
-				const li = document.createElement("li");
-				li.textContent = item.root;
-				li.onclick = () => {
-					showRootDetails(item.root);
-					history.replaceState(null, "", "?root=" + item.root);
-					if(checkbox.checked) {
-						container.classList.toggle('hide-right');
-						btn.textContent = container.classList.contains('hide-right') ? 'show list' : 'hide list';
-					}
-				};
-				list.appendChild(li);
-			});
-		}
+        fetch("roots.json")
+            .then(res => res.json())
+            .then(roots => {
+                rootsData = roots.sort((a, b) => a.root.localeCompare(b.root));
+                renderRootList(rootsData);
 
-		function showRootDetails(root) {
-			const item = rootsData.find(r => r.root === root);
-			if(!item) return;
-			
-			document.getElementById("root").textContent = item.root;
-			document.getElementById("meaning").textContent = item.meaning;
-			document.getElementById("image").src = "images/" + item.root + ".png";
-			document.getElementById("image").alt = item.root;
-			document.getElementById("pronunciation").textContent = "[" + item.pronunciation + "]";
-			document.getElementById("etymology").textContent = "Etymology: " + item.etymology;
-			
-			const categoriesEl = document.getElementById("categories");
-			categoriesEl.innerHTML = "<strong>Categories:</strong> ";
-			const rootCategories = categoriesData.filter(cat => cat.roots && cat.roots.includes(item.root));
-			
-			if(rootCategories.length > 0) {
-				rootCategories.forEach(cat => {
-					const link = document.createElement("a");
-					link.href = `cats.html?cat=${cat.id}`;
-					link.textContent = cat.name;
-					categoriesEl.appendChild(link);
-					categoriesEl.appendChild(document.createTextNode(" "));
-				});
-			} else {
-				categoriesEl.innerHTML += "None";
-			}
-			
-			const descentantsEl = document.getElementById("descentants");
-			if(item.descentants && item.descentants.length > 0) {
-				descentantsEl.innerHTML = "<strong>Derived words:</strong><br>";
-				item.descentants.forEach((desc, index) => {
-					const link = document.createElement("a");
-					link.href = `words.html?word=${desc}`;
-					link.textContent = desc;
-					descentantsEl.appendChild(link);
-					if(index < item.descentants.length - 1) descentantsEl.appendChild(document.createElement("br"));
-				});
-			} else {
-				descentantsEl.innerHTML = "";
-			}
-		}
+                const rootParam = new URLSearchParams(window.location.search).get("root");
+                if (rootParam) showRootDetails(rootParam);
+            })
+            .catch(err => console.error("data loading failed:", err));
 
-		document.getElementById("search").addEventListener("input", e => {
-			const filtered = rootsData.filter(r => r.root.toLowerCase().includes(e.target.value.toLowerCase()));
-			renderRootList(filtered);
-		});
-	</script>
+        function renderRootList(data) {
+            list.innerHTML = data.map(item => `<li data-root="${item.root}">${item.root}</li>`).join('');
+        }
+
+        list.addEventListener('click', e => {
+            const li = e.target.closest('li');
+            if (!li) return;
+
+            const rootVal = li.dataset.root;
+            showRootDetails(rootVal);
+            history.replaceState(null, "", "?root=" + rootVal);
+
+            if (checkbox.checked) {
+                toggleSidebar(true);
+            }
+        });
+
+        function showRootDetails(root) {
+            const item = rootsData.find(r => r.root === root);
+            if (!item) return;
+            
+            document.getElementById("root").textContent = item.root;
+            document.getElementById("meaning").textContent = item.meaning;
+            
+            const img = document.getElementById("image");
+            img.src = "images/" + item.root + ".png";
+            img.alt = item.root;
+            img.onload = () => img.style.display = "block";
+            img.onerror = () => img.style.display = "none";
+            
+            document.getElementById("pronunciation").textContent = item.pronunciation ? `[${item.pronunciation}]` : "";
+            document.getElementById("etymology").textContent = item.etymology ? "etymology: " + item.etymology : "";
+        }
+
+        searchInput.addEventListener("input", e => {
+            const query = e.target.value.toLowerCase().trim();
+            const filtered = rootsData.filter(r => 
+                r.root.toLowerCase().includes(query) || 
+                (r.meaning && r.meaning.toLowerCase().includes(query))
+            );
+            renderRootList(filtered);
+        });
+    </script>
 </body>
 </html>

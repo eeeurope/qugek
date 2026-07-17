@@ -1,59 +1,1454 @@
 [
   {
-    "root": "baart",
-    "pronunciation": "bʲæɹt",
-    "meaning": "head, голова",
-    "etymology": "Unknown.",
-    "descentants": [
-      "baarti",
-      "baarte",
-      "baartloov",
-      "baartlac"
-    ]
+    "root": "miec",
+    "meaning": "think, ponder, mull (over), meditation, ideation, mind activity",
+    "pronunciation": "",
+    "etymology": ""
   },
   {
-    "root": "yak",
-    "meaning": "apple, яблуко",
-    "pronunciation": "jɑq",
-    "etymology": "Distortion of Ukrainian яблуко.",
-    "descentants": [
-      "yaki",
-      "yake",
-      "yakladi"
-    ]
+    "root": "pit",
+    "meaning": "count, calculate, compute, reckon, weigh, carry out any operations with numbers",
+    "pronunciation": "",
+    "etymology": ""
   },
   {
-    "root": "sad",
-    "pronunciation": "sɑd",
-    "meaning": "forest, woods, ліс",
-    "etymology": "Unknown."
+    "root": "pic",
+    "meaning": "digit, arithmos",
+    "pronunciation": "",
+    "etymology": ""
   },
   {
-    "root": "yans",
-    "pronunciation": "jans",
-    "meaning": "(v) eat, їсти",
-    "etymology": "Unknown.",
-    "descentants": []
+    "root": "sciex",
+    "meaning": "consider, deem, think, opine, have an opinion",
+    "pronunciation": "",
+    "etymology": ""
   },
   {
-    "root": "sim",
-    "pronunciation": "sɪm",
-    "meaning": "drink, imbibe, пити",
-    "etymology": "Proto-Qugek *silm → si(l)m → sim",
-    "descentants": []
+    "root": "sais",
+    "meaning": "miec + pit + sciex",
+    "pronunciation": "",
+    "etymology": ""
   },
   {
-    "root": "ax",
-    "pronunciation": "ɑʂ",
-    "meaning": "run, бігти",
-    "etymology": "ar + -x- → a(r)x → ax",
-    "descentants": []
+    "root": "zanst",
+    "meaning": "long (time), having a great duration",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "anst",
+    "meaning": "long, prolonged, lengthy, tall (the root \"anst\" concerns only physical dimensions; for temporal duration use \"lom\" or \"zanst\"; the \"lom\" is common for both senses)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "lom",
+    "meaning": "long, prolonged, lengthy, tall (the root \"anst\" concerns only physical dimensions; for temporal duration use \"lom\" or \"zanst\"; the \"lom\" is common for both senses)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tud",
+    "meaning": "≈sistō (stud = exist)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dryli",
+    "meaning": "metal",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dryb",
+    "meaning": "forge, metalworking",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "gloc",
+    "meaning": "log, beam, trunk; pillar, pole, column",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "diox",
+    "meaning": "ash, cinis, τέφρα, 灰",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cert",
+    "meaning": "crystal",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "qodi",
+    "meaning": "branch, bough, limb, twig, line, thread, offshoot, outshoot, embrachment, tiller, tillow, ramus, κλάδος, 支 (the root is applicable to the structure description of not only trees, but also blood vessels, rivers, leaf veins, folders in file systems, and anything that can branch out)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hies",
+    "meaning": "cat, felid, feline, any animal from Felidae, kitty, kitten, puss, γάτος, αἴλουρος, 貓, 🐱🐈🐈‍⬛",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zab",
+    "meaning": "furious, fury, rage, frenzy, fierce, frantic, ardent, vehement, -яр-, ζωρός",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bis",
+    "meaning": "(once) again, anew; one more time, another time; back",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "miuv",
+    "meaning": "control, keep control over, own, occupy; (with fe-) occupy, begin to own, seize",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cgerd",
+    "meaning": "beast, (wild) animal, brute, θήρ, bēstia, fera, 兽",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "biad",
+    "meaning": "wild, untamed, feral, indomite, savage; uncivilised; fierce",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "iab",
+    "meaning": "tame, domesticate, place under human control, make not wild",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "piab",
+    "meaning": "public, collective, conventional, social, загал, -общ-, агул",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bagi",
+    "meaning": "fate, destiny",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "rem",
+    "meaning": "calm, tranquil, placid, quiet, serene, unworried, angerless; in derived terms: rest, peace, composure, soothe, reassure, appease, assuage",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "stond",
+    "meaning": "pray, ask a deity, beseech, 🙏🏻",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "gie",
+    "meaning": "star, stella, astrum, ἀστήρ, 星, ⭐",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mac",
+    "meaning": "call, shout to/for (without the connotation of a telephone connection, but with a slight connotation of despair), звати, кликати",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "vlar",
+    "meaning": "call, invite, shout to/for, звати; contact by telephone, ring",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "uul",
+    "meaning": "allow(edness), льзѧ",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "uuli",
+    "meaning": "allow(edness), льзѧ",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "buul",
+    "meaning": "prohibit(edness), нельзѧ",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "buuli",
+    "meaning": "prohibit(edness), нельзѧ",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "yat",
+    "meaning": "year, 12 months",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zong",
+    "meaning": "night, 00:00—05:59",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zog",
+    "meaning": "night, 00:00—05:59",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ioxt",
+    "meaning": "eve(n), evening, eventide, vesper, 17:00—23:59",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ruu",
+    "meaning": "nee √√√",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "fla",
+    "meaning": "feel, perceive, pathos",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mun",
+    "meaning": "fog, mist",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ue",
+    "meaning": "see",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ua",
+    "meaning": "watch, observe",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dav",
+    "meaning": "watch, observe",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "lyv",
+    "meaning": "таять",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cgav",
+    "meaning": "bread, loaf, any baked dough, 🍞, 🥖",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "drem",
+    "meaning": "music, melody",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hiast",
+    "meaning": "treasure, jewel, gem; something expensive, rare and valuable",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cgop",
+    "meaning": "saturate",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "din",
+    "meaning": "throat; swallow",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "plaf",
+    "meaning": "family",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hym",
+    "meaning": "image, imagine, copy",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "gej",
+    "meaning": "clay",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyanc",
+    "meaning": "angle",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "viel",
+    "meaning": "wound, vulneration, injury, lesion",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ston",
+    "meaning": "holy, saint, sanctuary, sanctus, sacred, hieros, hagios",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "reg",
+    "meaning": "field, agros",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "var",
+    "meaning": "air",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "vooc",
+    "meaning": "wind",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mooc",
+    "meaning": "sky, heaven",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mya",
+    "meaning": "work, labour; function (verb), operate, ἔργον, operor, 工",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "drup",
+    "meaning": "table",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bur",
+    "meaning": "table",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tons",
+    "meaning": "happiness, any kind of positive emotions",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "huur",
+    "meaning": "island, isle",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "lien",
+    "meaning": "small, tiny, micro-",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hioh",
+    "meaning": "wrinkle, cringe, purse, press together, make protrude, pucker, trench, groove, frown, shrivel, curdle",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sint",
+    "meaning": "truth, true, verity, reality; right, correct",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ier",
+    "meaning": "time, раз",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "si",
+    "meaning": "life, living, vīta, βίος, ζωή, 生",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "siht",
+    "meaning": "settlement, village, rural area, town, colony, hamlet, locality",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cgyli",
+    "meaning": "twist, roll, scroll, curl (up)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "carg",
+    "meaning": "paper",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "carp",
+    "meaning": "book",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ca",
+    "meaning": "down, lower",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "voo",
+    "meaning": "up, upper",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hin",
+    "meaning": "home",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "nieg",
+    "meaning": "snail, slug, gastropod, κόχλιας, 🐌",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "niehi",
+    "meaning": "snail shell; → spire, spiral, scroll, helix, curl, volute",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "muux",
+    "meaning": "moist, moisture, humid, damp, wet",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ryh",
+    "meaning": "garlic !PAL",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bung",
+    "meaning": "incline, decline, bend, lean, tilt, slope, skew !PAL",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "a",
+    "meaning": "go, walk; come, attend",
+    "pronunciation": "",
+    "etymology": ""
   },
   {
     "root": "ar",
-    "pronunciation": "ɑɹ",
-    "meaning": "go, йти",
-    "etymology": "Proto-Qugek *ař ",
-    "descentants": []
+    "meaning": "go, walk; come, attend",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ili",
+    "meaning": "substance, physical matter, material, stuff",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "scie",
+    "meaning": "dicō: say, speak, testify, utter; order, command; show, indicate",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dyaf",
+    "meaning": "\"scie\" with an emphasis on telling or speaking emotionally, seriously or officially; → speak, utter, proclaim, tirade, narrate, dictate",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "syt",
+    "meaning": "show",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zyt",
+    "meaning": "hide",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "voot",
+    "meaning": "wise, very intelligent",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "micg",
+    "meaning": "milk (verb), extract, mulgeō, ἀμέλγω !PAL",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zalg",
+    "meaning": "milk (verb), extract, mulgeō, ἀμέλγω !PAL",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "re",
+    "meaning": "any, whichever wanted, either, no matter which, -ever",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "liesp",
+    "meaning": "cut (up), carve, incise",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cip",
+    "meaning": "cut (up), carve, incise",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyr",
+    "meaning": "hard, difficult, not easy, cumbersome, burdensome, grave, severe; cottage cheese, curd",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zan",
+    "meaning": "time, tempus, χρόνος, ⏳🕰️",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pac",
+    "meaning": "break, shatter, split, breach, fracture, rupture, frangō",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "jya",
+    "meaning": "decide, determine, verdict, (re)solve, make one's mind up",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "qjya",
+    "meaning": "discern, κρίνω → judge by/from, criticize; appraise, esteem, consider, confer, assess",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "qjyaq",
+    "meaning": "find fault with, carp on, pick on, cavil, gossip, nag, nitpick, quibble; reproach, blame, upbraid, rebuke, admonish, rub in, cast in someone's teeth",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ciut",
+    "meaning": "point, puncture, pūnctum, στιγμή, точка; dot, spot, speck, speckle, any small round mark; full stop, period; spike, tip, any sharp extremity, κέντρον; moment, ord",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "nom",
+    "meaning": "different, dissimilar, diverse, unlike, unmatched, varied, not the same, other",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ulic",
+    "meaning": "different, dissimilar, diverse, unlike, unmatched, varied, not the same, other",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "byv",
+    "meaning": "blood, hemo-, hemato-, sanguī̆s, αἷμα, 血, 🩸; → consanguinity",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "scuu",
+    "meaning": "mind, consciousness, intelligence, intellect, mentality, reason, розум, μένος, φρήν, μνήμη, mens, 心, 🧠",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cro",
+    "meaning": "mind, consciousness, intelligence, intellect, mentality, reason, розум, μένος, φρήν, μνήμη, mens, 心, 🧠",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "croli",
+    "meaning": "mind, consciousness, intelligence, intellect, mentality, reason, розум, μένος, φρήν, μνήμη, mens, 心, 🧠",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pest",
+    "meaning": "abstraction, reasoning, higher meaning, abstract concept; intellect, mind, sapience",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pe",
+    "meaning": "from pest: derivational prefix that elevates a literal or physical concept to its abstract, intellectual, institutional, or moral equivalent, and/or denoting abstract formalization or intellectualization of the root",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "p",
+    "meaning": "suffix version of pe-",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "zev",
+    "meaning": "guess, divination, prophecy, conjecture, surmise, -mance; suppose, assume, presume, imply",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "siom",
+    "meaning": "sleep, nap, doze, snooze, slumber, hibernate, dormiō, 眠, 💤😴🛌",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "iav",
+    "meaning": "draw",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "fiav",
+    "meaning": "sketch",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cif",
+    "meaning": "fasten, attach; pin",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "xast",
+    "meaning": "follow, sequor",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "jast",
+    "meaning": "result",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "igyl",
+    "meaning": "city, town, large settlement, urbs, cīvitās, πόλις, -bourg, -grad, -pol(is), -abad, -ville",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "igli",
+    "meaning": "city, town, large settlement, urbs, cīvitās, πόλις, -bourg, -grad, -pol(is), -abad, -ville",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "liert",
+    "meaning": "cage, coop, cell, bars, grating",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyaf",
+    "meaning": "strong, firm, solid, robust, sturdy",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dub",
+    "meaning": "strong, firm, solid, robust, sturdy",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "nag",
+    "meaning": "go (towards), wend one's way, keep a course/path, make one's way, head (verb), make for; stride, step, proceed, move/go along, cēdō; as a noun: path, way, course, heading, route",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sad",
+    "meaning": "forest, woods, woodland, grove, large copse/thicket, silva, δρυμός, 林",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mial",
+    "meaning": "vessel, angeion",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hiam",
+    "meaning": "vessel, (war)ship, liner, large boat, any watercraft, nāvis, καράβιον, 船",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sut",
+    "meaning": "chest, casket, (strong)box, trunk, coffer",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ard",
+    "meaning": "any cuboid wooden vessel; box, case, chest, drawer, ящик; theke",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "scieb",
+    "meaning": "cool, tough, excellent, awesome; savage, 酷",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "rym",
+    "meaning": "money, cash, currency, pecūnia, χρήματα, 錢, 💰💸",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "suh",
+    "meaning": "(close) friend, companion, pal, chum, mate, comrade, homie, fella, amīcus, 友, 👬",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "siac",
+    "meaning": "grandchild, ἔγγονος, nepōs, 孫",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ont",
+    "meaning": "son",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sev",
+    "meaning": "child, kid, youth, youngling (general term for young human being or animal)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ec",
+    "meaning": "offspring, calf (a child in relation to their parents, emphasizing kinship)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "moc",
+    "meaning": "black, ⬛",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cig",
+    "meaning": "white, ⬜",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sted",
+    "meaning": "red, 🟥",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bihi",
+    "meaning": "yellow, 🟨",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "iez",
+    "meaning": "green, 🟩",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "lans",
+    "meaning": "blue, 🟦",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "daz",
+    "meaning": "purple, 🟪",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "palt",
+    "meaning": "gold, aurum, Au, χρυσός, 金 🏅💛",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "uub",
+    "meaning": "silver, argentum, Ag, ἄργυρος, 銀, 🥈🩶🥄",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hiez",
+    "meaning": "iron, ferrum, Fe, σίδηρος, 鐵",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mord",
+    "meaning": "dirt, uncleanliness, filth, pollution",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "piordyl",
+    "meaning": "strange, weird",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "nas",
+    "meaning": "strange, weird",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dza",
+    "meaning": "ray, beam, radiation, radius",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hart",
+    "meaning": "clear, limpid, bright, clārus, λαμπρός, ясний",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tsyts",
+    "meaning": "click, clink, clack, clank, clop, tick, make any sound similar to clicking",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tsyc",
+    "meaning": "click, clink, clack, clank, clop, tick, make any sound similar to clicking",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyc",
+    "meaning": "click, clink, clack, clank, clop, tick, make any sound similar to clicking",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "fyf",
+    "meaning": "snort, sniff, scoff, grouse, grumble, chuckle, chortle, snicker",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "gyg",
+    "meaning": "growl, roar, grumble, snarl, gurgle",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hyh",
+    "meaning": "oink, grunt, snort, snore; make sound of phlegm expectoration",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mym",
+    "meaning": "moo, bellow, mumble, hum; \"nyn\" but with closed lips",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "nyn",
+    "meaning": "whimper, whine, yammer, snivel, cry",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tyt",
+    "meaning": "rattle, clank, clatter, tinkle, noise, racket",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "vyv",
+    "meaning": "howl, wail, mourn",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "xyx",
+    "meaning": "whisper",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "xyhxyh",
+    "meaning": "rustle, crackle, swish; whisper",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "xyh",
+    "meaning": "rustle, crackle, swish; whisper",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hang",
+    "meaning": "part, portion, share, fraction, element, component of a whole",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "qang",
+    "meaning": "piece, bit, bite, chunk, slice, scrap, snippet, shred, separated component of a whole with connotations of tornness off",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "baz",
+    "meaning": "say, tell (shortly), pronounce, indicate verbally",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bab",
+    "meaning": "talk, chat, communicate, converse with someone; rumours, gossip",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sens",
+    "meaning": "tell, say about, inform, report, order, message, give notice, notify, apprise",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "muns",
+    "meaning": "mumble, mutter, murmur, babble, burble, jabber, maunder; speak unintelligibly, vaguely or quietly, especially involving lips and tongue !PAL",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "byb",
+    "meaning": "mumble, mutter, murmur, babble, burble, jabber, maunder; speak unintelligibly, vaguely or quietly, especially involving lips and tongue !PAL",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dam",
+    "meaning": "power, might, (vital) vigor",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "glaf",
+    "meaning": "energy, vigor, power to function or work; (electrical) charge",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tus",
+    "meaning": "(official) power, authority; administration",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "saqj",
+    "meaning": "power, rule, control, authority, -cracy, -archy",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pedam",
+    "meaning": "tus~saqj",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "nieb",
+    "meaning": "snow, any white flakes or precipitation; nix, χιών, 雪, ❄️🌨️",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dzi",
+    "meaning": "amber (yellow fossil resin, or a blue one as a variety); ἤλεκτρον → electronic, electric, electro-, e-",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tos",
+    "meaning": "country, nation (rather as a cultural or geographic concept, non-political)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "toj",
+    "meaning": "state, nation (rather as a political or institutional entity)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "petos",
+    "meaning": "state, nation (rather as a political or institutional entity)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "loar",
+    "meaning": "come back, return",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ly",
+    "meaning": "come back, return",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "coog",
+    "meaning": "swan, κύκνος, 🦢",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "liec",
+    "meaning": "turn, spin, gyrate, revolve, rotate (int.)",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "poucg",
+    "meaning": "(brimmed) hat",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hian",
+    "meaning": "sprinkle, gush, shower; spray, atomize, pulverize",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pyav",
+    "meaning": "rain",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "mioob",
+    "meaning": "stain, blot, blemish; spot",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tuc",
+    "meaning": "hunt, chase; to fish (in compound word \"saztuku\")",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "saz",
+    "meaning": "fish, ῐ̓χθῡ́ς, piscis, ♓🎏🐟",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "vem",
+    "meaning": "woman, lady; female, dam, doe, hen, she, jenny, γυνή, femina, 女, ♀️",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "niob",
+    "meaning": "boil (over), seethe, popple, bubble, blaze, froth, well up, ebullition; to cook by boiling (in compound words \"nnobonu\" or \"nnoprintu\"); ζέω",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "niou",
+    "meaning": "boil (over), seethe, popple, bubble, blaze, froth, well up, ebullition; to cook by boiling (in compound words \"nnobonu\" or \"nnoprintu\"); ζέω",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "fagyl",
+    "meaning": "please, pleasure, pleasance, agreeability, satisfaction, kaif, delight, gladness, (en)joy",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "fagli",
+    "meaning": "please, pleasure, pleasance, agreeability, satisfaction, kaif, delight, gladness, (en)joy",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "liem",
+    "meaning": "like, love, enjoy, be pleased by, favor, prefer",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ax",
+    "meaning": "run, currō, τρέχω, 走",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "xyat",
+    "meaning": "border, borderline, boundary, bounds, confines, frontier, (upper) limit, margin; restriction, constraint; quota",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "tsoo",
+    "meaning": "thousand",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "lim",
+    "meaning": "glue, agglutinate, stick (on), adhere",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "yap",
+    "meaning": "tier, level",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "csot",
+    "meaning": "hatch, incubate, brood, nurture, mature; carry, bear, be pregnant with. describes the development of a fetus prior to birth",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "alp",
+    "meaning": "open",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "sooz",
+    "meaning": "sit",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ub",
+    "meaning": "let; leave; allow",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dia",
+    "meaning": "burn; sting",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyu",
+    "meaning": "cold, cryo",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyl",
+    "meaning": "cold, cryo",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyug",
+    "meaning": "cold, cryo",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cylg",
+    "meaning": "cold, cryo",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cyuhi",
+    "meaning": "ice, frost, glace",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "steci",
+    "meaning": "flower, blossom, flora, florid, flourish, bloom, any reproductive organ of plants",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "vam",
+    "meaning": "beautiful, pretty",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "hyag",
+    "meaning": "precise, exact, accurate, unerring, undeviating, correct in calculations",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "du",
+    "meaning": "sun, solar, ☀️, 日",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "liool",
+    "meaning": "eye, oculus, 👁️, 目",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "iel",
+    "meaning": "recent, not long ago, new, late, latter; young",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "xom",
+    "meaning": "(fishing) net, netting, network, mesh, gauze; chain; grid, graticule; rēte, 🥅🕸️, 网",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dov",
+    "meaning": "game, play, pastime, pleasure, fidget, amusement; gamble",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "syc",
+    "meaning": "cut (off), cleave, divide, hew, carve, sculpt, chop, slash, secō, -sect-",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "scu",
+    "meaning": "cut (off), cleave, divide, hew, carve, sculpt, chop, slash, secō, -sect-",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "gy",
+    "meaning": "flow, leak, stream, run (liquid), flux, be poured, fluō, ῥέω, 流",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "viet",
+    "meaning": "bee, 🐝",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ci",
+    "meaning": "world",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cihi",
+    "meaning": "world",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ust",
+    "meaning": "take, grab, capture, seize, capiō, 取",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "cya",
+    "meaning": "hold, teneō, 持",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ce",
+    "meaning": "body, corpus",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pet",
+    "meaning": "print, stamp, mark, impress",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "lar",
+    "meaning": "call, dial",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "fiom",
+    "meaning": "chain, series, array, lineup, any horizontal sequence",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "pen",
+    "meaning": "remote, far, distant, tele-",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "ven",
+    "meaning": "sound",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "piv",
+    "meaning": "cloud",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "dioom",
+    "meaning": "space, room",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "stup",
+    "meaning": "load",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "styag",
+    "meaning": "manage, steer, control",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "vai",
+    "meaning": "send",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "duci",
+    "meaning": "lose",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "glic",
+    "meaning": "file",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "bam",
+    "meaning": "(cell)phone",
+    "pronunciation": "",
+    "etymology": ""
+  },
+  {
+    "root": "gio",
+    "meaning": "must, oblige, bind",
+    "pronunciation": "",
+    "etymology": ""
   }
 ]
